@@ -5,13 +5,13 @@
         display: flex;
         justify-content: space-around;
         li {
+            text-align: center;
             .feature-icon {
                 background-color: $secondary-color;
                 border-radius: 50%;
                 height: 98px;
                 width: 98px;
-                margin: 0 auto;
-                margin-bottom: 30px;
+                margin: 0 auto 30px auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -20,7 +20,6 @@
                     font-size: 48px;
                 }
             }
-            text-align: center;
             a {
                 text-decoration: none;
                 color: $heading-color;
@@ -65,7 +64,8 @@
             }
         }
         iframe {
-            width: 500px;
+            max-width: 500px;
+            width: 100%;
             height: 307px;
             border: none;
         }
@@ -149,7 +149,6 @@
         @include list;
         li {
             margin-top: 20px;
-
             p {
                 max-width: 800px;
             }
